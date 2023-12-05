@@ -14,9 +14,10 @@ interface BannerProps {
         right?: string;
         bottom?: string;
     };
+    content?: string;
 }
 export function BannerWrapper({
-children, isFixed, isShow, isShowClose, className, position
+children, isFixed, isShow, isShowClose, className, position, content
 }: BannerProps) {
 
     const bannerStyle = isFixed ? tw(
